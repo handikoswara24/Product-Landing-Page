@@ -1,0 +1,242 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: rgb(211, 209, 209);
+}
+
+.clear{
+    clear: both;
+}
+
+#header{
+    top: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 75px;
+    margin: 0 auto;
+    background-color: rgb(211, 209, 209);
+}
+
+#logo{
+    width: 60vw;
+}
+
+#header-img{
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+
+#nav-bar{
+    width: 35vw;
+}
+
+#nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container{
+    height: 75px;
+}
+
+#form1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#form1 h2{
+    margin-bottom: 20px;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#email{
+    width: 250px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+#submit{
+    width: auto;
+    padding: 0 5px;
+    font-size: 15px;
+    margin: 0 auto;
+    background-color: rgb(255, 208, 0);
+    font-weight: bold;
+}
+
+#feature{
+    width: 60vw;
+    margin: 100px auto;
+}
+
+.features{
+    margin: 0 auto 20px auto;
+}
+
+.img-features{
+    width: 10vw;
+    float: left;
+}
+
+.img-features img{
+    width: 65px;
+    height: 65px;
+    text-align: center;
+}
+
+.exp-features{
+    width: 50vw;
+    float: left;
+}
+
+#how-it-work iframe{
+    margin: 0 auto;
+    display: block;
+    width: 40vw;
+    min-width: 550px;
+}
+
+#pricing{
+    width: 1000px;
+    margin: 100px auto 50px auto;
+}
+
+.kolom-3{
+    float: left;
+    width: 29%;
+    margin: 0 1.5%;
+    border: 1px black solid;
+    text-align: center;
+}
+
+.kolom-3 h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: gray;
+    vertical-align: middle;
+    font-size: 15px;
+}
+
+.kolom-3 h2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.kolom-3 p{
+    margin-bottom: 10px;
+}
+
+.kolom-3 button{
+    padding: 10px;
+    border-radius: 2px;
+    background-color: rgb(255, 208, 0);
+}
+
+#footer{
+    width: 1000px;
+    background-color: gray;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+#footer ul{
+    text-align: right;
+    padding-top: 15px;
+}
+
+#footer ul li{
+    display: inline;
+    margin-right: 15px;
+}
+
+#footer p{
+    text-align: right;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+
+@media only screen and (max-width: 650px){
+    #header{
+        flex-wrap: wrap;
+    }
+
+    .container{
+        height: 125px;
+    }
+
+    #logo{
+        width: 100%;
+    }
+
+    #header-img{
+        width: 100%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    #nav-bar ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #nav-bar ul li{
+        padding-bottom: 10px;
+    }
+
+    #feature{
+        width: 80vw;
+    }
+
+    .exp-features{
+        width: 90vw;
+    }
+
+    .img-features{
+        display: none;
+    }
+
+    #how-it-work iframe{
+        width: 80vw;
+        min-width: 100px;
+    }
+
+    .kolom-3{
+        float: none;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding-bottom: 15px;
+    }
+}
